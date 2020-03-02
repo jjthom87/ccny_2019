@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome To Firebase</title>
+</head>
+<body>
+	<div id="signed_in_user"></div>
+	<div id="auth-sign-div">
+	<h2>Sign Up</h2>
+		<form id="sign_up_form">
+			<input type="text" placeholder="Email" id="email_su_input"/>
+			<input type="text" placeholder="Zip Code" id="zip_su_input"/>
+			<input type="password" placeholder="Password" id="password_su_input"/>
+			<input type="submit"/>
+		</form>
+		<br><br>
+		<h2>Sign In</h2>
+		<form id="sign_in_form">
+			<input type="text" placeholder="Email" id="email_si_input"/>
+			<input type="password" placeholder="Password" id="password_si_input"/>
+			<input type="submit"/>
+		</form>
+	</div>
+	<button id="logout_button">Logout</button>
+	<br><br>
+	<div id="user-bio-form-div">
+		<label>User Bio</label>
+		<form id="user-bio-form">
+			<label>Name</label>
+			<br>
+			<input type="text" id="name-input"/>
+			<br>
+			<label>Hometown</label>
+			<br>
+			<input type="text" id="hometown-input"/>
+			<br>
+			<label>Bio</label>
+			<br>
+			<textarea id="bio-input"></textarea>
+			<br>
+			<input type="submit">
+		</form>
+	</div>
+	<div id="users-bio"></div>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+<script type="text/javascript" src="index.js"></script>
+</html>
